@@ -55,6 +55,7 @@
     "yargs": ">=8.0.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/jshint *.js locale/*.js && ava"
+    "test": "./node_modules/.bin/jshint *.js locale/*.js && ava",
+    "build:berlin": "gulp --name=moment-holiday-berlin.js --locale=Germany --set=Germany/BE --min"
   }
 }
