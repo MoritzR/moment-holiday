@@ -7,7 +7,7 @@ var argv = require('yargs').argv,
   sourcemaps = require('gulp-sourcemaps'),
   uglify = require('gulp-uglify');
 
-function generate(locales, set, minify, filename) {
+async function generate(locales, set, minify, filename) {
   var append = '', files = ['moment-holiday.js'];
 
   if (locales && locales.length) {
@@ -38,11 +38,9 @@ function generate(locales, set, minify, filename) {
     .pipe(gulp.dest('build/'));
 }
 
-gulp.task('default', function() {
-  generate(argv.locale, argv.set, argv.min, argv.name);
-});
+gulp.task('default', async () =>  generate(argv.locale, argv.set, argv.min, argv.name));
 
-gulp.task('build', function() {
+gulp.task('build', async () => {
   var locales = [];
   var localePath = require('path').join(__dirname, 'locale');
   require('fs').readdirSync(localePath).forEach(function(file){
