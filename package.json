@@ -56,6 +56,6 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/jshint *.js locale/*.js && ava",
-    "build:berlin": "gulp --name=moment-holiday-berlin.js --locale=Germany --set=Germany/BE --min"
+    "build:berlin": "gulp --name=moment-holiday-berlin.js --locale=Germany --locale=Easter --set=Germany/BE --min"
   }
 }
