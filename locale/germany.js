@@ -3,10 +3,14 @@
 //! author : Kodie Grantham : https://github.com/kodie
 /* regions :
       BB : Brandenburg
+      BE : Berlin
       BW : Baden-Württemberg
       BY : Bayern
+      HB : Bremen
       HE : Hessen
+      HH : Hamburg
       MV : Mecklenburg-Vorpommern
+      NI : Niedersachsen
       NW : Nordrhein-Westfalen
       RP : Rheinland-Pfalz
       SN : Sachsen
@@ -19,7 +23,7 @@
   var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
 
   moment.holidays.germany = {
-    "Neujahrstag": {
+    "Neujahr": {
       date: '1/1',
       keywords: ['new', 'year']
     },
@@ -41,6 +45,10 @@
       date: '1/6',
       keywords: ['konige'],
       regions: ['bw', 'by', 'st']
+    },
+    "Internationaler Frauentag": {
+      date: '3/8',
+      regions: ['be']
     },
     "Maifeiertag": {
       date: '5/1'
@@ -73,7 +81,7 @@
     },
     "Reformationstag": {
       date: '10/31',
-      regions: ['bb', 'mv', 'sn', 'st', 'th']
+      regions: ['bb', 'hb', 'hh', 'mv', 'ni', 'sn', 'st', 'sh', 'th']
     },
     "Allerheiligen": {
       date: '11/1',
@@ -84,9 +92,9 @@
       keywords: ['bub'],
       regions: ['sn']
     },
-    "Weihnachten": {
-      date: '12/24',
-      keywords: ['christmas']
+    "Erster Weihnachtsfeiertag": {
+      date: '12/25',
+      keywords_y: ['erster']
     },
     "Zweiter Weihnachtsfeiertag": {
       date: '12/26',

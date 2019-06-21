@@ -315,10 +315,14 @@ moment('2017-01-01').holidaysBetween();
 * [Finland](locale/finland.js)
 * [Germany](locale/germany.js)
   * `Germany/BB` - Brandenburg
+  * `Germany/BE` - Berlin
   * `Germany/BW` - Baden-Württemberg
   * `Germany/BY` - Bayern
+  * `Germany/HB` - Bremen
   * `Germany/HE` - Hessen
+  * `Germany/HH` - Hamburg
   * `Germany/MV` - Mecklenburg-Vorpommern
+  * `Germany/NI` - Niedersachsen
   * `Germany/NW` - Nordrhein-Westfalen
   * `Germany/RP` - Rheinland-Pfalz
   * `Germany/SN` - Sachsen
