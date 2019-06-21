@@ -3,6 +3,14 @@
 
 A [Moment.js](https://github.com/moment/moment) plugin for handling holidays.
 
+## Shortcut: build minified file for berlin
+Modify [the locale file](locale/germany.js) to your liking, then run
+```
+npm i
+npm run build:berlin
+```
+and import `build/moment-holiday-berlin.min.js` into your project.
+
 ## Table of Contents
 * [Requirements](#requirements)
 * [Installation](#installation)
