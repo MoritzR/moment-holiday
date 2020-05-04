@@ -99,6 +99,10 @@
     "Zweiter Weihnachtsfeiertag": {
       date: '12/26',
       keywords_y: ['zweiter']
+    },
+    "Jahrestag der Befreiung vom Nationalsozialismus": {
+      date: '05/08/2020',
+      regions: ['be']
     }
   };
 
